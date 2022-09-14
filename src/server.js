@@ -18,6 +18,12 @@ server.get('/test', (req, res) => {
 
 server.get('/test2', (req, res)=>{
   console.log("Test2 get");
+  res.sendStatus(201);
+});
+
+server.get('/env', (req, res) => {
+  console.log('blank env');
+  res.sendStatus(202);
 });
 
 server.listen(process.env.PORT, () =>
