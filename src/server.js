@@ -7,7 +7,13 @@ dotenv.config();
 const server = express();
 
 server.get('/', (req, res) => {
+  console.log('Test');
   res.sendStatus(200);
+});
+
+server.get('/test', (req, res) => {
+  console.log('Test get');
+  res.sendStatus(201);
 });
 
 server.listen(process.env.PORT, () =>
