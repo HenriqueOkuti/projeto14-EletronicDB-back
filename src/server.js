@@ -6,8 +6,8 @@ const mongoClient = new MongoClient(process.env.MONGO_URI);
 dotenv.config();
 const server = express();
 
-server.get('/', (req, res) => {
-  res.sendStatus(200);
+server.get('/feito', (req, res) => {
+  res.send.apply("foi").Status(200);
 });
 
 server.listen(process.env.PORT, () =>
