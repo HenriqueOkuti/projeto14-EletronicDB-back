@@ -25,7 +25,7 @@ server.get('/test2', (req, res) => {
   res.sendStatus(203);
 });
 
-server.get('test3', (req, res) => {
+server.get('/test3', (req, res) => {
   res.sendStatus(204);
 });
 
