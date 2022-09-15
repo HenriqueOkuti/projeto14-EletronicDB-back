@@ -25,6 +25,10 @@ server.get('/test2', (req, res) => {
   res.sendStatus(203);
 });
 
+server.get('test3', (req, res) => {
+  res.sendStatus(204);
+});
+
 server.listen(process.env.PORT, () =>
   console.log(`Server running on port ${process.env.PORT}`)
 );
