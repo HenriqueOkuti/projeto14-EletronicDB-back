@@ -6,7 +6,7 @@ const mongoClient = new MongoClient(process.env.MONGO_URI);
 dotenv.config();
 const server = express();
 
-server.get('/', (req, res) => {
+server.get('/tete', (req, res) => {
   console.log('Test');
   res.sendStatus(200);
 });
