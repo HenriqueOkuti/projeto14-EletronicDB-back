@@ -7,7 +7,6 @@ dotenv.config();
 const server = express();
 
 server.get('/', (req, res) => {
-  console.log('Test');
   res.sendStatus(200);
 });
 
