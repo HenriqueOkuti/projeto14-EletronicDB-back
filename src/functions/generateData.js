@@ -1,6 +1,7 @@
 import fs, { writeFileSync } from 'fs';
 import { uniqueNamesGenerator, adjectives } from 'unique-names-generator';
 import { RandomPicture } from 'random-picture';
+import * as readline from 'readline';
 
 //generateData is a function that randomly generates data to be used on the mock-up for the website
 export default async function generateData() {
@@ -21,9 +22,11 @@ export default async function generateData() {
   const DATA_LIMIT = 5000;
 
   for (let i = 0; i < DATA_LIMIT; i++) {
-    process.stdout.clearLine();
-    process.stdout.cursorTo(0);
-    process.stdout.write(`Progress: ${((i / DATA_LIMIT) * 100).toFixed(2)}%`);
+    readline.clearLine(process.stdout, 0);
+    readline.cursorTo(process.stdout, 0, null);
+    process.stdout.write(
+      `Progress of new data: ${((i / DATA_LIMIT) * 100).toFixed(2)}%`
+    );
 
     //name utilizes the uniqueNamesGenerator for a random adjective of a product
     const name =
@@ -64,6 +67,7 @@ export default async function generateData() {
 
   //we write the data string inside data.csv
   writeFileSync('data.csv', data);
+  return true;
 }
 
 //runs the generate data function
