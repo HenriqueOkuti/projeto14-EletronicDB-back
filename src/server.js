@@ -12,10 +12,6 @@ server.use(express.json());
 
 sendDataToDB();
 
-server.get('/', (req, res) => {
-  res.sendStatus(200);
-});
-
 server.get('/mongo', async (req, res) => {
   const data = await db.collection(COLLECTIONS.PRODUCTS).find({}).toArray();
   console.log(data);
