@@ -10,14 +10,14 @@ const server = express();
 server.use(cors());
 server.use(express.json());
 
-//sendDataToDB();
+sendDataToDB();
 
 server.get('/', (req, res) => {
   res.sendStatus(200);
 });
 
 server.get('/mongo', async (req, res) => {
-  const data = await db.collection(COLLECTIONS.PRODUCTS).find({ name: 'name' });
+  const data = await db.collection(COLLECTIONS.PRODUCTS).find({}).toArray();
   console.log(data);
   res.send(data);
 });
