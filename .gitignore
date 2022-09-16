@@ -1,2 +1,4 @@
 node_modules
 .env
+data.csv
+data5000.csv

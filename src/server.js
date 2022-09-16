@@ -1,10 +1,11 @@
 import express from 'express';
+import cors from 'cors';
 import dotenv from 'dotenv';
-import { MongoClient } from 'mongodb';
 
-const mongoClient = new MongoClient(process.env.MONGO_URI);
 dotenv.config();
 const server = express();
+server.use(cors());
+server.use(express.json());
 
 server.get('/', (req, res) => {
   res.sendStatus(200);
