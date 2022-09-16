@@ -32,7 +32,7 @@
     "unique-names-generator": "^4.7.1"
   },
   "devDependencies": {
-    "fs": "^0.0.1-security",
+    "fs": "^0.0.1-security"
 
   }
 }
