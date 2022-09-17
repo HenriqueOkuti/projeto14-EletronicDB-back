@@ -3,6 +3,7 @@ import db from '../db/db.js';
 import { COLLECTIONS } from '../enums/collections.js';
 
 export default async function sendDataToDB() {
+  return
   const DB_DATA = await dataToObj();
   if (DB_DATA) {
     console.log('\nData has been read and is ready to use');
