@@ -70,5 +70,3 @@ export default async function generateData() {
   return true;
 }
 
-//runs the generate data function
-generateData();

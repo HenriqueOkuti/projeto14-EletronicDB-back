@@ -3,7 +3,6 @@ import express from 'express';
 //IMPORT MIDDLEWARES
 
 const router = express.Router();
-router.post('/cart', doSomething());
-router.get('/cart', doAnotherSomething());
+router.get('/mongo', getMongo);
 
 export default router;
