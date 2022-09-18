@@ -1,9 +1,17 @@
 import express from 'express';
-//IMPORT CONTROLLERS
-//IMPORT MIDDLEWARES
+import {
+  insertItem,
+  sendCart,
+  updateCart,
+} from '../controllers/cart.controllers.js';
+import {
+  verifyCredentials,
+  verifyCart,
+} from '../middlewares/cart.middleware.js';
 
 const router = express.Router();
-router.post('/cart', doSomething());
-router.get('/cart', doAnotherSomething());
+router.get('/cart', verifyCredentials, sendCart);
+router.post('/cart', verifyCredentials, verifyCart, insertItem);
+router.put('/cart', verifyCredentials, verifyCart, updateCart);
 
 export default router;

@@ -17,12 +17,14 @@ export default async function sendDataToDB() {
       console.log('aborting send operations');
       return;
     }
+    const ZERO = 0;
 
-    DB_DATA.forEach((element) => {
-      const INSERTED_ELEMENT = db
-        .collection(COLLECTIONS.PRODUCTS)
-        .insertOne(element);
-    });
+    DB_DATA.forEach((element, index) =>
+      index === ZERO
+        ? ''
+        : db.collection(COLLECTIONS.PRODUCTS).insertOne(element)
+    );
+    console.log('Data has been sent to the server');
   } catch (error) {
     console.log(error);
   }

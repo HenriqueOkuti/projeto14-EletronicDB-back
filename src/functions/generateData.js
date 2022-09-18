@@ -19,7 +19,7 @@ export default async function generateData() {
   let data = `name,value,id,promotion,image_main,description,type`;
 
   //how many data entries are generated
-  const DATA_LIMIT = 5000;
+  const DATA_LIMIT = 50;
 
   for (let i = 0; i < DATA_LIMIT; i++) {
     readline.clearLine(process.stdout, 0);
@@ -69,4 +69,3 @@ export default async function generateData() {
   writeFileSync('data.csv', data);
   return true;
 }
-
