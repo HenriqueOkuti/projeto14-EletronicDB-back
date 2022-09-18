@@ -1,0 +1,51 @@
+name,value,id,promotion,image_main,description,type
+Product molecular,7863.00,0,true,44,https://picsum.photos/id/402/1200/715.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,1
+Product smooth,2521.00,1,false,0,https://picsum.photos/id/1047/3264/2448.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,2
+Product smooth,309.00,2,false,0,https://picsum.photos/id/760/2200/1467.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,3
+Product moaning,4425.00,3,true,38,https://picsum.photos/id/190/2048/1365.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,4
+Product adorable,5255.00,4,false,0,https://picsum.photos/id/493/3872/2592.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,1
+Product slow,3010.00,5,false,0,https://picsum.photos/id/266/4608/2592.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,2
+Product horizontal,3634.00,6,false,0,https://picsum.photos/id/232/3000/1987.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,3
+Product independent,348.00,7,false,0,https://picsum.photos/id/69/4912/3264.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,4
+Product straight,7549.00,8,true,9,https://picsum.photos/id/288/3888/2592.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,1
+Product technological,1362.00,9,true,49,https://picsum.photos/id/800/4663/3109.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,2
+Product adequate,3645.00,10,false,0,https://picsum.photos/id/200/1920/1280.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,3
+Product thoughtless,1626.00,11,false,0,https://picsum.photos/id/519/4761/3174.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,4
+Product negative,3148.00,12,true,66,https://picsum.photos/id/811/3992/2992.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,1
+Product electric,9788.00,13,true,71,https://picsum.photos/id/677/4288/2848.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,2
+Product xenial,5660.00,14,true,72,https://picsum.photos/id/1063/4867/3215.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,3
+Product magnetic,5028.00,15,false,0,https://picsum.photos/id/140/2448/2448.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,4
+Product shared,8380.00,16,true,63,https://picsum.photos/id/34/3872/2592.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,1
+Product respective,4510.00,17,false,0,https://picsum.photos/id/378/5184/3456.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,2
+Product chronic,7260.00,18,false,0,https://picsum.photos/id/336/1600/1060.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,3
+Product honest,1792.00,19,false,0,https://picsum.photos/id/338/2000/1333.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,4
+Product lengthy,8702.00,20,false,0,https://picsum.photos/id/31/3264/4912.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,1
+Product familiar,6004.00,21,true,17,https://picsum.photos/id/865/2000/1333.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,2
+Product expected,1805.00,22,false,0,https://picsum.photos/id/446/3072/1728.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,3
+Product rotten,9075.00,23,true,73,https://picsum.photos/id/533/4000/3000.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,4
+Product troubled,4173.00,24,true,55,https://picsum.photos/id/204/5184/3456.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,1
+Product practical,8977.00,25,true,35,https://picsum.photos/id/66/3264/2448.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,2
+Product solid,3377.00,26,false,0,https://picsum.photos/id/1035/5854/3903.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,3
+Product managing,4411.00,27,false,0,https://picsum.photos/id/599/2509/1673.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,4
+Product profound,6190.00,28,true,30,https://picsum.photos/id/947/5616/3744.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,1
+Product near,2814.00,29,false,0,https://picsum.photos/id/947/5616/3744.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,2
+Product opposite,9711.00,30,true,73,https://picsum.photos/id/89/4608/2592.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,3
+Product marvellous,7634.00,31,false,0,https://picsum.photos/id/612/2731/1536.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,4
+Product colorful,5667.00,32,false,0,https://picsum.photos/id/140/2448/2448.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,1
+Product exceptional,190.00,33,false,0,https://picsum.photos/id/961/2560/1707.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,2
+Product magnificent,6552.00,34,false,0,https://picsum.photos/id/906/3840/2880.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,3
+Product light,7241.00,35,true,59,https://picsum.photos/id/1065/3744/5616.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,4
+Product worthy,5620.00,36,false,0,https://picsum.photos/id/971/5184/3456.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,1
+Product revolutionary,4783.00,37,false,0,https://picsum.photos/id/828/3165/2374.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,2
+Product male,6995.00,38,false,0,https://picsum.photos/id/403/3997/2665.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,3
+Product repulsive,201.00,39,true,29,https://picsum.photos/id/146/5184/3456.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,4
+Product environmental,3897.00,40,true,49,https://picsum.photos/id/902/3300/2200.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,1
+Product zany,3915.00,41,true,39,https://picsum.photos/id/481/5184/3456.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,2
+Product solid,5933.00,42,true,23,https://picsum.photos/id/322/5760/3840.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,3
+Product simple,724.00,43,true,77,https://picsum.photos/id/942/5546/3697.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,4
+Product unsightly,439.00,44,true,15,https://picsum.photos/id/735/1510/2445.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,1
+Product independent,8861.00,45,true,56,https://picsum.photos/id/28/4928/3264.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,2
+Product unpleasant,5577.00,46,false,0,https://picsum.photos/id/970/3264/2448.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,3
+Product weird,8856.00,47,false,0,https://picsum.photos/id/152/3888/2592.jpg,Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.,4
+Product puzzled,2240.00,48,false,0,https://picsum.photos/id/791/5760/3840.jpg,Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.,1
+Product working,3436.00,49,true,5,https://picsum.photos/id/505/2000/1333.jpg,Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.,2
