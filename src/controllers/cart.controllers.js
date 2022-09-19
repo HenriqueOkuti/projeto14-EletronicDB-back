@@ -4,7 +4,7 @@ import { STATUS_CODE } from '../enums/statusCode.js';
 import findIndex from '../functions/findIndex.js';
 
 async function insertItem(req, res) {
-  const { user, cartExists, cartUser } = res.locals;
+  const { user, cartExists, cartUser, needUpdateValue } = res.locals;
   const newItem = req.body;
   try {
     if (!cartExists) {
@@ -13,11 +13,13 @@ async function insertItem(req, res) {
         cart: [{ ...newItem }],
       });
     } else {
-      const userCart = cartUser.cart;
-      userCart.push({ ...newItem });
-      await db
-        .collection(COLLECTIONS.CARTS)
-        .updateOne({ userId: user._id }, { $set: { cart: userCart } });
+      if (!needUpdateValue) {
+        const userCart = cartUser.cart;
+        userCart.push({ ...newItem });
+        await db
+          .collection(COLLECTIONS.CARTS)
+          .updateOne({ userId: user._id }, { $set: { cart: userCart } });
+      }
     }
     return res.sendStatus(200);
   } catch (error) {
@@ -44,17 +46,19 @@ async function sendCart(req, res) {
 
 async function updateCart(req, res) {
   const { user, cartUser } = res.locals;
-  const updateItem = req.body;
+  const updateItems = req.body;
 
   try {
-    const userCart = cartUser.cart;
-    const indexUpdate = findIndex(updateItem, userCart);
-    userCart[indexUpdate] = updateItem;
+    const userCart = updateItems;
+    const array = [];
+    for (let product of userCart) {
+      array.push(product);
+    }
+
     await db
       .collection(COLLECTIONS.CARTS)
-      .updateOne({ userId: user._id }, { $set: { cart: userCart } });
-
-    return res.send(200);
+      .updateOne({ userId: user._id }, { $set: { cart: array } });
+    return res.sendStatus(200);
   } catch (error) {
     console.log(error);
     return res.sendStatus(STATUS_CODE.BAD_REQUEST);

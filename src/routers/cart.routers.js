@@ -7,11 +7,20 @@ import {
 import {
   verifyCredentials,
   verifyCart,
+  verifyItem,
+  updateItem,
 } from '../middlewares/cart.middleware.js';
 
 const router = express.Router();
-router.get('/cart', verifyCredentials, sendCart);
-router.post('/cart', verifyCredentials, verifyCart, insertItem);
+router.get('/cart', verifyCredentials, verifyItem, sendCart);
+router.post(
+  '/cart',
+  verifyCredentials,
+  verifyCart,
+  verifyItem,
+  updateItem,
+  insertItem
+);
 router.put('/cart', verifyCredentials, verifyCart, updateCart);
 
 export default router;
