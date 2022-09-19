@@ -3,7 +3,7 @@ const COLLECTIONS = Object.freeze({
   SESSIONS: 'sessions',
   USERS: 'users',
   CARTS: 'carts',
-
+  ORDERS: 'orders',
 });
 
 export { COLLECTIONS };
