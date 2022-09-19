@@ -85,7 +85,6 @@ async function updateItem(req, res, next) {
   const { user, indexUpdate, needUpdateValue } = res.locals;
   try {
     if (needUpdateValue) {
-      console.log('arrived here');
       let cartItens = await db
         .collection(COLLECTIONS.CARTS)
         .find({
