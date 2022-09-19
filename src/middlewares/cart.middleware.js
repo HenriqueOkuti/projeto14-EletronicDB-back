@@ -44,6 +44,7 @@ async function verifyCart(req, res, next) {
     }
     res.locals.cartExists = cartExists;
     res.locals.cartUser = cartUser;
+    res.locals.newItem = newItem;
     next();
   } catch (error) {
     console.log(error);
@@ -51,4 +52,59 @@ async function verifyCart(req, res, next) {
   }
 }
 
-export { verifyCredentials, verifyCart };
+async function verifyItem(req, res, next) {
+  const { user, newItem } = res.locals;
+  let needUpdateValue = false;
+  let indexUpdate = -1;
+  try {
+    let cartItens = await db
+      .collection(COLLECTIONS.CARTS)
+      .find({
+        userId: user._id,
+      })
+      .toArray();
+    if (cartItens[0] !== undefined) {
+      cartItens = cartItens[0].cart;
+      for (let i = 0; i < cartItens.length; i++) {
+        if (cartItens[i]?.id === newItem?.id) {
+          needUpdateValue = true;
+          indexUpdate = i;
+        }
+      }
+    }
+    res.locals.needUpdateValue = needUpdateValue;
+    res.locals.indexUpdate = indexUpdate;
+    next();
+  } catch (error) {
+    console.log(error);
+    res.sendStatus(STATUS_CODE.SERVER_ERROR);
+  }
+}
+
+async function updateItem(req, res, next) {
+  const { user, indexUpdate, needUpdateValue } = res.locals;
+  try {
+    if (needUpdateValue) {
+      console.log('arrived here');
+      let cartItens = await db
+        .collection(COLLECTIONS.CARTS)
+        .find({
+          userId: user._id,
+        })
+        .toArray();
+      cartItens[0].cart[indexUpdate].quantity = (
+        Number(cartItens[0].cart[indexUpdate].quantity) + 1
+      ).toString();
+      await db
+        .collection(COLLECTIONS.CARTS)
+        .updateOne({ userId: user._id }, { $set: { cart: cartItens[0].cart } });
+    }
+
+    next();
+  } catch (error) {
+    console.log(error);
+    res.sendStatus(STATUS_CODE.SERVER_ERROR);
+  }
+}
+
+export { verifyCredentials, verifyCart, verifyItem, updateItem };
