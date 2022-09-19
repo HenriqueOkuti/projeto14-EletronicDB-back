@@ -19,7 +19,7 @@ async function insertItem(req, res) {
         .collection(COLLECTIONS.CARTS)
         .updateOne({ userId: user._id }, { $set: { cart: userCart } });
     }
-    return res.send(200);
+    return res.sendStatus(200);
   } catch (error) {
     console.log(error);
     return res.sendStatus(STATUS_CODE.BAD_REQUEST);
